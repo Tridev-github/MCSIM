@@ -1,7 +1,7 @@
 # M A N D A T O R Y
 #####
 /gate/geometry/setMaterialDatabase GateMaterials.db
-/vis/disable
+#/vis/disable
 
 /control/execute geometry.mac
 /control/execute plate.mac
@@ -11,16 +11,16 @@
 
 /gate/run/initialize
 /control/execute source.mac
-# /control/execute visual.mac
+/control/execute visual.mac
 
 /control/execute digitizer.mac
 
 
 # Experiment
 
-/gate/application/setTimeSlice      1  ms
+/gate/application/setTimeSlice      1 s
 /gate/application/setTimeStart      0. ms
-/gate/application/setTimeStop       10. ms
+/gate/application/setTimeStop       4. s
 
 
 # V E R B O S I T Y
